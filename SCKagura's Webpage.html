@@ -15,8 +15,8 @@
     <body>
 
         <hr>
-
-        <h2>หน้า 1 กับหน้า 2 จะเป็นที่เรียนเนื้อหา HTML ทั้งหมด!</h2>
+        <h1> Ref.KongRuksiam Official</h1>
+        <h2>หน้า 1 จะเป็นที่เรียนเนื้อหา HTML ทั้งหมด!</h2>
         <h1>h1 ตัวอักษรใหญ่สุด</h1>
         <h2>h2</h2>
         <h3>h3</h3>
@@ -29,9 +29,9 @@
         <p>EY YO WTF! </p>
         <p>Comment on vscode = Ctrl + / </p>
         <hr> 
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Some thing special click me </a>  <!--เปิดเว็ปในแท็ปนี้ --> 
+        <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Some thing special click me </a> </h1> <!--เปิดเว็ปในแท็ปนี้ --> 
         <p></p>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">or click me? </a>  <!--เปิดเว็ปแท็ปใหม่ -->
+        <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">or click me? </a> </h1> <!--เปิดเว็ปแท็ปใหม่ -->
        
         <hr>
 
@@ -53,7 +53,7 @@
         <p><u> u(underline)</u></p> <!--ขีดเส้นใต้-->
         <p><del>del(delete)</del></p> <!--ขีดฆ่า -->
         <p> <mark>mark(mark words)</mark> <!--มาร์คคำศัพท์-->
-        <h2>v<sup>2</sup> = u<sup>2</sup> + 2as    sup = เลขยกกำลัง</h2>s  <!--sup จะเป็นยกกำลัง-->
+        <h2>v<sup>2</sup> = u<sup>2</sup> + 2as    sup = เลขยกกำลัง</h2>  <!--sup จะเป็นยกกำลัง-->
         <h3> C <sub>11</sub> H <sub>22</sub> O <sub>11</sub>   sub = เลขห้อย</h3>  <!--sup = เลขห้อย -->
         <h3>s = ut + 1/2at<sup>2</sup></h3>
         <p> <i><b><u><mark><del><strong>H<sup>2</sup>ello World<sub>2</sub></strong></del></mark> </u></b></i>
@@ -88,7 +88,7 @@
         <br><a href="page2.html" target="_blank" rel="noopener noreferrer"> go page 2 อะโบ๋ร์  </a>  <!--target="_blank" ใช้ขึ้นแท็บใหม่ ไม่มีก็ได้-->
         <br><a href="page3.html"  rel="noopener noreferrer">go page 3 อะโบ๋ร์ </a>  <!--ทำใน tab เดียวเลย--> <br>
         <br><br> 
-        <p>การใช้ list </p>
+        <h1>การใช้ list </h1>
 
         <hr>
 
@@ -143,9 +143,11 @@
         <ol type="i">
             <li> ลาบเล็ก </li>
             <li> ลาบใหญ่ </li>
-            <li> ลาบข้น</li>
-            <li> ลาบใส</li>
-            <li> ลาบยำ</li>
+                <ul>
+                    <li> ลาบข้น</li>
+                    <li> ลาบใส</li>
+                    <li> ลาบยำ</li>
+                </ul>
         </ol>
 
         <hr> 
@@ -177,14 +179,113 @@
         <h4>แบบ type ="square" </h4>
         <h3> ร้าน ลาบสั่ง</h3>
         <ul type ="square">
-            <li>ลาบเจียวดาว</li>
+            <li>ลาบเจียว
+                <ol type ="1">
+                    <li> ลาบเจียวดาว</li>
+                    <li> ลาบเจียวหมูสับ</li>
+                    <li> ลาบเจียวบะเหริด</li>
+                </ol>
+            </li>
             <li> ลาบโรนี</li>
             <li> ลาบสุกี้</li>
         </ul>
 
+        <hr>
 
+        <h1>การสร้างตาราง (ดูเอกสารที่ข้อยจดประกอบเน้อ น่าจะแผ่นที่ 4) </h1>
+         
+        
+        <hr>
 
-
+        <h2>รายการสินค้า</h2>
+        <table border="1"  bgcolor = "00BFFF" cellpadding = "70" cellspacing ="20"> <!--สีฟ้า-->  <!--สร้าตารางขึ้น โดยให้ทั้งตารางมีพื้นหลังสีฟ้า-->
+             <!--padding ขยายจากข้างใน spacing ขยายจากข้านอก-->
+                <th>รหัสสินค้า</th>
+                <th>ภาพสินค้า</th>
+                <th>ชื่อสินค้า</th>
+                <th>ราคา</th>
+                <th>ดำเนินการ</th>
+            </thead>
+            <tbody> <!--ถ้าจะทำให้ทุกอย่างเริ่มที่ตรงกลาง ให้เพิ่ม align = "center "-->
+                <tr bgcolor = "F9966B" align="left">  <!--สีแดง--> <!--ทั้งแถว จะเป็นสีแดง ถ้าคอลลัมน์ไม่ถูกกำหนดสี -->
+                    <td bgcolor="#87F717">EZ007</td> <!--สีเขียวเหลือง--> <!--สีเขียวเหลทองในคอลลัมน์แรก-->
+                    <td>
+                        <img src="image/ลาบ.png" alt="" width = "50px" height="50px">
+                    </td>
+                    <td>ลาบ</td>
+                    <td>17 ล้าน</td>
+                    <td><a href="#">สั่งซื้อ</a></td> <!--การระบุ # บอกว่ายังไม่มีการกำหนดลิ้งค์ในตอนเริ่มต้น (อ้างอิง ID ภายใน HTML)-->
+                </tr>
+                <tr>
+                    <td>EZ5678</td>
+                    <td>
+                        <img src="image/ก๋วยเตี๋ยว.jpg" alt="" width = "50px" height="50px">
+                    </td>
+                    <td bgcolor="yellow">ลาบเตี๋ยว</td>
+                    <td>เฟอรารี่คันนึง</td>
+                    <td><a href="#">สั่งซื้อ</a></td>
+                </tr>
+                <tr bgcolor = "pink"> <!--กำหนดสีชมพู ทั้งแถว หากคอลลัมน์ไหนไม่ถูกกำหนดสี-->
+                    <td>Lnwza008</td>
+                    <td>
+                        <img src="image/ข้าวไข่เจียว.jpg" alt="" width = "50px" height="50px" >
+                    </td>
+                    <td> ข้าวไข่เจียว</td>
+                    <td> รถเบนซ์ 4 คัน</td>
+                    <td><a href="#">สั่งซื้อ</a></td>
+                </tr>
+                <!-- การรวม column -->
+                <tr aria-colspan="2">
+                    <td>#038932</td>
+                    <td colspan="2">  <!-- 2 คือภาพกับชื่อสินค้า รวมคอลลัมน์กัน คำว่าสั่งซื้อจะโดนตบไปทางขวา-->  
+                        <img src="image/ไก่ย่าง.jfif" alt="" width = "50px" height="50px">
+                    </td>
+                    <td> ไก่ย่าง</td>
+                    <td> 30 ดอล</td>
+                    <td><a href="#">สั่งซื้อ</a></td>
+                </tr>
+                <tr>
+                    <td>#1815616</td>
+                    <td>
+                        <img src="image/ชูชิ.jfif" alt="" width = "50px" height="50px">
+                    </td>
+                    <td>ชูชิ</td>
+                    <td> 300/ชิ้น</td>
+                    <td rowspan="2"><a href="#">สั่งซื้อ</a></td> <!--คำว่าสั่งซื้อของชูชิกับขนมจีนจรวมกัน ทำให้คำสั่งซื้อของขนมจีนโดนตบไปทางขวา-->
+                </tr>
+                <tr>
+                    <td>#007700</td>
+                    <td>
+                        <img src="image/ขนมจีน.jfif" alt="" width = "50px" height="50px">
+                    </td>
+                    <td> ขนมจีน </td>
+                    <td> 23 กีบ</td>
+                    <td><a href="#">สั่งซื้อ</a></td>
+                </tr>
+                <tr align="center">  <!--จะเริ่ม ทำจากตรงกลางก่อน-->
+                    <td>#3091273017</td>
+                    <td>
+                        <img src="image/ส้มตำๆ.jfif" alt="" width = "50px" height="50px" >
+                    </td>
+                    <td> ส้มตำ</td>
+                    <td> 30 </td>
+                    <td><a href="#">สั่งซื้อ</a></td>
+                </tr>
+                <tr>
+                    <td align="right">#312318</td> 
+                    <td align="right"><img src="image/มักโรนี.jfif" alt="" width = "50px" height="50px"></td>
+                    <td align="center">มักกะโรนี</td>
+                    <td align="center"> 256464</td>
+                    <td><a href="#">สั่งซื้อ</a></td> 
+                </tr>
+            </tbody>
+            <tfoot align="right">
+                <tr>
+                    <td colspan="5">ราคารวม : 200 ล้าน</td> <!--รวม column 5 column โดยที่ไม่มีตัวอื่น-->
+                    <td></td> <!--แถบที่เลยมาด้านขวา-->
+                </tr>
+            </tfoot>
+        </table>
     </body> 
 
 
