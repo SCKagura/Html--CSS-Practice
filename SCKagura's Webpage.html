@@ -1,16 +1,22 @@
+<!--พิมพ์ doc -->
 <!DOCTYPE html> <!--HTML 5 นะจ๊ะ-->
-<html lang="en"> <!--ภาษาเว็ป-->
+<html lang="en"> <!--ภาษาเว็ป(จริงๆมันก็ใช้ภาษาอะไรก็ได้แหละ)-->
 <html>
     <head> 
+        <!--พิมพ์ meta จะขึ้นเป็นชุดๆมาให้เลือกเลย-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0"> <!--แสดงผลหน้าเว็ปให้ตรงขนาดของอุปกรณืที่ใช้ -->
         <meta name="description" content="เว็ปเกี่ยวกับการเขียนโปรแกรม">      <!--คำอธิบาย -->
         <meta name="author" content="SCKagura" >  <!--ผู้เขียน-->
         <meta name="keywords" content="SCKagura Webpage ahahaa">  <!--คำค้นหา -->
         
-        <title>SCKagura's_Webpage</title> <<!--หัวข้อ (ที่ขึ้นบนชื่อเว็ป)-->
+        <title>SCKagura's_Webpage</title> <!--หัวข้อ (ที่ขึ้นบนชื่อเว็ป)-->
     </head>
     <body>
+
+        <hr>
+
+        <h2>หน้า 1 กับหน้า 2 จะเป็นที่เรียนเนื้อหา HTML ทั้งหมด!</h2>
         <h1>h1 ตัวอักษรใหญ่สุด</h1>
         <h2>h2</h2>
         <h3>h3</h3>
@@ -22,12 +28,23 @@
         <p>Content 2 </p>
         <p>EY YO WTF! </p>
         <p>Comment on vscode = Ctrl + / </p>
-        
+        <hr> 
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Some thing special click me </a>  <!--เปิดเว็ปในแท็ปนี้ --> 
         <p></p>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">or click me? </a>  <!--เปิดเว็ปแท็ปใหม่ -->
+       
+        <hr>
+
         <h1>ร้าน สักกำบ๋อ</h1> 
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque et architecto temporibus omnis autem placeat similique, voluptatum eaque vero dolore amet. Ipsum vitae, libero animi magni beatae fugiat velit! Molestias veniam inventore excepturi aut perspiciatis eius dignissimos quo dicta nam! (ใช้ lorem ตามด้วยเลข จะ generate ข้อความสุ่มๆมา)  </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Itaque et architecto temporibus omnis autem placeat similique, 
+        voluptatum eaque vero dolore amet. Ipsum vitae, 
+        libero animi magni beatae fugiat velit! 
+        Molestias veniam inventore excepturi aut perspiciatis eius
+        dignissimos quo dicta nam! (ใช้ lorem ตามด้วยเลข จะ generate ข้อความสุ่มๆมา Ex.lorem40)  </p>
+        
+        <hr>
+
         <p>ตัวที่ใช้ร่วม tag p</p>
         <p> <small> small</small>   </p>  <!--ตัวบาง-->
         <p> <strong> strong</strong>  </p> <!--ตัวหนา-->
@@ -40,9 +57,134 @@
         <h3> C <sub>11</sub> H <sub>22</sub> O <sub>11</sub>   sub = เลขห้อย</h3>  <!--sup = เลขห้อย -->
         <h3>s = ut + 1/2at<sup>2</sup></h3>
         <p> <i><b><u><mark><del><strong>H<sup>2</sup>ello World<sub>2</sub></strong></del></mark> </u></b></i>
-
-
+        <hr> <!--เส้นคั่น --> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem et eligendi excepturi fugit. In, quisquam ea!<br>
+         Magnam debitis voluptatum reiciendis a laboriosam! <br>
+         Optio, quae nam excepturi ea, deleniti perferendis vel voluptatum porro explicabo rem autem ipsum eaque blanditiis <br> 
+         necessitatibus est.
+        </p>
+        <h2>br = ขึ้นบรรทัดใหม่    hr=เส้นคั่น</h2>
         
+        <hr>
+
+        <!--พิมพ์ a  เลือก a:blank-->
+        <a href="Learning/page4.html"  rel="noopener noreferrer"> หน้า 4 </a> <!--หากมีไฟล์ ให้เข้าทางไฟล์ก่อน-->
+        <a href="https://youtu.be/E7A1yqsJ8co" target="_blank" rel="noopener noreferrer">open my clip </a> <br> 
+        <h1><b><u>About Myself</u></b> </h1>
+        <p>Name :SCKagura </p> 
+        <p>Birthday :  29 december 2003</p>
+        <p>Age : 19 Years old |</p>
+        <p>status : single </p>
+        <!--Internal image-->
+        <!--พิมพ์ img -->
+       <p> <img src="image/My LOGO.jpg" alt="รูปข้อยเองอะโบ๋ร์" width="120px" height="120px">  </p><!--เพิ่มภาพ internal ตามขนาด -->
+       <p>รูปภาพ internal</p>
+       <!--external image-->
+        <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXzAdRqO74HJ6otA3ZHBu3wCLwl3rozR2IsPNF1azdx2Qq9IbkuIV4iUavJbbTU0XCMR4&usqp=CAU" alt="เคมีที่เรารัก By empty eye " width="120px" height="120px"></p>
+        <p>รูปภาพ external </p>
+        <a href="page2.html" target="_blank"" >
+        <p><img src="image/emptyeye cc.png" alt="empty eye circke" width="200" height="200"></p> </a>
+        <h4>กดรูปภาพเพื่อไปหน้า 2</h4>
+        <br><a href="page2.html" target="_blank" rel="noopener noreferrer"> go page 2 อะโบ๋ร์  </a>  <!--target="_blank" ใช้ขึ้นแท็บใหม่ ไม่มีก็ได้-->
+        <br><a href="page3.html"  rel="noopener noreferrer">go page 3 อะโบ๋ร์ </a>  <!--ทำใน tab เดียวเลย--> <br>
+        <br><br> 
+        <p>การใช้ list </p>
+
+        <hr>
+
+        <p>ol order list เรียงแบบใช้เลข</p>
+
+        <hr>
+
+        <h4>แบบ type = "1"</h4>
+        <h3>ร้านบักลาบ</h3>
+        <ol type="1">
+            <li>ลาบลาว</li>
+            <li>ลาบไทย</li>
+            <li>ลาบคั่ว</li>
+            <li>ลาบบักลาบ</li>
+            </ol>
+
+        <hr>
+
+        <h4>แบบ type = "A"</h4>
+        <h3>ร้าน บักตำ</h3>
+        <ol type="A">
+            <li> ตำไทย</li>
+            <li>ตำลาบ</li>
+            <li>ตำลาว</li>
+        </ol>
+
+        <hr>
+
+        <h4>แบบ type = "a"</h4>
+        <h3>ร้าน คนลาบๆควรไปนอน</h3>
+        <ol type="a">
+            <li> ไอ้ลาบ 1</li>
+            <li> ไอ้ลาบ 2</li>
+            <li> ไอ้ลาบ 3</li>
+        </ol> 
+        
+        <hr>
+
+        <h4>แบบ type ="I"</h4>
+        <h3>ร้าน ขนมจีน</h3>
+        <ol type="I">
+            <li>น้ำยา</li>
+            <li>น้ำเงี้ยว</li>
+            <li>น้ำลาบ</li>
+            <li>น้ำมันสัมปะหลัง</li>
+        </ol>
+
+        <hr> 
+
+        <h4>แบบ type ="i"</h4>
+        <h3> ร้าน ลาบเตี๋ยว</h3>
+        <ol type="i">
+            <li> ลาบเล็ก </li>
+            <li> ลาบใหญ่ </li>
+            <li> ลาบข้น</li>
+            <li> ลาบใส</li>
+            <li> ลาบยำ</li>
+        </ol>
+
+        <hr> 
+
+        <p>ul unorder list เรียงแบบใช้สัญลักษณ์ </p>
+        
+        <hr> 
+
+        <h4> แบบ type ="disc"</h4>
+        <h3> ร้าน ลาบชิ</h3>
+        <ul type = "disc">
+            <li> ชูชิปลาแซลมอล</li>
+            <li> ชูชิปลาซาบะ</li>
+            <li> ชูชิลาบ</li>
+        </ul>
+
+        <hr> 
+
+        <h4>แบบ type = "circle"</h4>
+        <h3>ร้าน ไก่ลาบ</h3>
+        <ul type ="circle">
+            <li>ไก่ย่างลาบ</li>
+            <li>ไก่ย่างมะเร็ง</li>
+            <li>ไก่บักเอ้ก</li>
+        </ul>
+
+        <hr> 
+
+        <h4>แบบ type ="square" </h4>
+        <h3> ร้าน ลาบสั่ง</h3>
+        <ul type ="square">
+            <li>ลาบเจียวดาว</li>
+            <li> ลาบโรนี</li>
+            <li> ลาบสุกี้</li>
+        </ul>
+
+
+
+
     </body> 
 
 
