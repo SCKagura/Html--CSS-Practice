@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 2</title>
+ <!--   <style>
+     div
+        {
+            border:1px solid blue ;
+        }
+        span
+        {
+            border: 1px solid red;
+        }
+    </style> -->
+</head>
+<body >
+    <h1>You are in  2  nd page</h1>
+
+
+    <br><hr><br>
+    <h1 align="center"> การสร้างแบบฟอร์ม </h1>
+    <form align ="center">
+        <span>
+            <label for="firstname">ชื่อจริง</label> <!--label คือป้ายกำกับ-->
+            <input type="text" name="firstname" placeholder="ใส่ชื่อจริงของคุณ">
+        </span>
+        <span>
+            <label for="lastname">นามสกุล</label> 
+            <input type="text" name="lastname" placeholder="ใส่ชื่อนามสกุลของคุณ">
+        </span>
+        <div>
+            <label for="password">รหัสผ่านของคุณ</label> <!--รับรหัส เวลากรอกจะเป็นจุดๆๆ-->
+            <input type="password" name="password" placeholder="ใส่รหัสของคุณ">
+        </div>
+        <div>
+            <label for="adress">ที่อยู่</label>   
+        </div>
+        <textarea name="adress" id="" cols="70" rows="10"></textarea> <!--สร้างกล่องข้อความ-->
+        <div>
+            <label for="age">อายุของคุณ</label>  
+            <input type="number" name="age" placeholder="ใส่อายุของคุณ" min="0" max="100">  <!--รับค่าตัวเลข กำหนดขอบเขตได้-->
+        </div>
+        <div>
+            <label for="">วันเกิด</label>
+            <input type="datetime" name="birthday" >    <!--ขึ้นปฎิทินให่เลย-->
+        </div>
+        <div>
+            <label for="">สีที่ชอบ</label>
+            <input type="color" name="favcol" >  <!--เลือกสีได้เลย-->
+        </div>
+        <div>
+            <label for="">ไฟล์</label>
+            <input type="file" name="file" > <!--เลือกไฟล์ในเครื่องลงได้-->
+        </div>
+        <div>
+            <label for="">ช่วงความสุขของคุณ</label>
+            <input type="range" name="favcol" >  <!--แถบเลื่อน-->
+        </div>
+        <div>
+            <label for="">รูป</label>
+            <input type="image" name="image" >  <!--ใส่รูปไปปได้-->
+        </div>
+        <div>
+            <label for="">คำค้นหา</label>
+            <input type="search" name="search" >
+        </div>
+        <div>
+            <label for="">ลิ้งค์</label>
+            <input type="url" name="url" >  <!--ใส่ลิ้งค์ไปได้-->
+        </div>
+        <div>
+            <label for="">เรียนอยู่ไหนละ</label>         <!--option ใหเลือก-->
+            <select name ="edu " id ="">
+                <option value="อนุบาล">อนุบาล</option>
+                <option value="ประถม">ประถม</option>"
+                <option value="มัธยมตอนต้น">มัธยมตอนต้น</option>
+                <option value="มัธยมตอนปลาย">มัธยมตอนปลาย</option>
+                <option value="ปริญญาตรี"  selected>ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+                <option value="ปริญญาเอก">ปริญญาเอก</option>
+            </select>
+        </div>
+        <div>
+            <label for="">เพศ</label>    <!--เป็น option ให้เลือก (name ต้องมีค่าเดียวกัน) -->
+            <input type="radio" name="gender"> เพศชาย
+            <input type="radio" name="gender"> เพศหญิง 
+            <input type="radio" name="gender"> กำหนดเอง
+        </div>
+        <div>
+            <label for="">ตัวอย่าง radio แบบไม่กำหนด name</label>
+            <input type="radio" name=""> เพศชาย
+            <input type="radio" name=""> เพศหญิง 
+            <input type="radio" name=""> กำหนดเอง
+        </div>
+        <div>
+            <label for="">สิ่งที่คุณชอบ</label>  <!--กล่องให้ติ๊ก-->
+            <input type="checkbox" name="fav">อ่านหนังสือ
+            <input type="checkbox" name="fav">เล่นเกม
+            <input type="checkbox" name="fav">นอน
+            <input type="checkbox" name="fav">เขียนโค้ด
+            <input type="checkbox" name="fav">ทำงานบ้าน
+        </div>
+        <div>
+            <input type="text" value="อะจ๊ะเอ๋ ยุ่งไม่ได้อะดิ" readonly>  <!--อ่านได้อย่างเดียว-->
+        </div>
+        <span>
+            <input type="submit" value="บันทึกข้อมูล">  <!--บันทึกข้อมูล-->
+            <button type="submit">บันทึกข้อมูล้หมือนกันนะ</button>
+        </span>
+        <br>
+        <span>
+            <input type="reset" value="ล้างข้อมูล"> <!--ล้างข้อมูล-->
+            <button type="reset">ล้างข้อมูล้หมือนกันนะ</button>
+        </span>
+    </form>
+
+    <br><hr><br>
+    <h1 align="center"> Block VS Inline</h1>
+    <div>
+        Block
+    </div>
+    <span>
+        Inline
+    </span>
+    <br><br><br>
+    <a href="SCKagura's Webpage.html"  rel="noopener noreferrer">ไปหน้าแรก</a> <br>
+    <a href="page3.html"  rel="noopener noreferrer">ไปหน้า 3  </a> <br>
+    <a href="page4.html"  rel="noopener noreferrer">ไปหน้า 4  </a> <br>
+    <a href="semetic.html"  rel="noopener noreferrer">ไปหน้า semetic  </a> <br>
+    <a href="page5.html"  rel="noopener noreferrer">ไปหน้า 5  </a> <br>
+    <a href="page6.html"  rel="noopener noreferrer">ไปหน้า 6  </a> <br>
+    <a href="page7.html"  rel="noopener noreferrer">ไปหน้า 7 </a> <br>
+</body>
+</html>
