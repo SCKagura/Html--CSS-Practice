@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 CSS</title>
+    <style>
+        h2 /*selector ไปที่่ tag h2 */
+        {
+            color: green; /* tag h2 จะมี สี green */
+        }
+        .class1 /*selector ไปที่ class(.) ชื่อ class1 */
+        {
+            color:blueviolet ; /*class1 จะมีสี blueviolet */
+        }
+        #id1 /*selector ไปที่ id(#) ชื่อ id1 */
+        {
+            color:brown; /*id1 จะมีสี brown */
+        }
+        #id2 /*selector ไปที่ id(#) ชื่อ id2 */
+        {
+            color:tomato ; /*id2 จะมีสี tomato */
+        }
+        h3,.title /*selector ไปที่ทั้ง  h3 และ class ขื่อ title ให้ตัวเอียง */ 
+        {
+            font-style: italic;
+        }
+        h4.title
+        {
+            color:lawngreen; /* เฉพาะ h4 ที่มีคลาสเป็น title จะมีสีเป็น lawgreen */
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Welcome To CSS</h1>
+    <h1 align="center">เรื่องแรก Selector</h1>
+    
+    <br><hr> <br>
+    <h2 class="class1">THIS IS MORE THAN HTML </h2> <!--สีตาม class1-->
+    <h2 class="class1">I'm so confused </h2>  <!--สีตาม class1-->
+    <h2 id="2">I'm SCKagura</h2>   <!--สีตาม id2-->
+    <h2>Example</h2>
+    <h2 class="class1">class1</h2>    <!--สีตาม class1-->
+    <h2 class="class2" id="id1">class2  id1 </h2> <!--สีตาม รก1-->
+    <h2 id="id2" class="class1">ID2 class1 </h2>  <!--สีตาม id2-->
+    <h2 id="id3">ID3</h2>      <!--สีตาม  h2 เนื่องจากยังไม่กำหนดค่าของ id3-->
+    <h2 class="title">h2 class title</h2>   <!--ตัวเอียงตาม class title-->
+    <h3>H3</h3>   <!--ตัวเอียงตาม h3-->
+    <h4>H4</h4>  <!---->
+    <h4 class="title">H4 class title</h4>  <!--มีสีตาม h4.title เพราะถูกกำหนดมาเฉพาะ-->
+    <br><br>
+    <h1><u>สำคัญ</u>กำหนด class ให้เหมือนกันได้ แต่อย่าให้ id เหมือนกัน</h1>
+    <br><br>
+    <a href="page2 CSS.html"> ไปหน้า 2</a>
+</body>
+</html>
