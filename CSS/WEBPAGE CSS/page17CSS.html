@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 17 CSS</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        h1
+        {
+            text-align: center;
+            color:brown ;
+        }
+        h2
+        {
+            clear:both;
+            text-align:center;
+        }
+        .container
+        {
+            width:960px; /*รวมเอา padding กับ border แล้ว*/ /*เป็นค่าที่สมมุติขึ้นมา เพราะมันอาจจะเกินได้*/
+            margin:30px auto ;
+        }
+        body
+        {
+            line-height: 1.4em;
+        }
+        .box
+        {
+            background-color: #f4f4f4;
+            border:1px solid #333 ;
+            padding:10 px ;
+            margin-bottom:15px;
+        }
+        #box-2
+        {
+            float:left ;
+            width: 20%;
+        }
+        #box-5
+        {
+            float:left ;
+            width: 70%;
+        }
+        #box-6
+        {
+            float:right ;
+            width: 30%;
+        }
+        .clr
+        {
+            clear:both;
+        } 
+        h2
+        {
+            clear:both ;
+        }
+        #box-10
+        {
+            float:left ;
+            width: 30%;
+        }
+        #box-11
+        {
+            float:right ;
+            width: 30%;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="fonth1.css">
+</head>
+<body>
+    <div class="container">
+        <div id="box-1" class="box">
+            <h1>title 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+        <div id="box-2" class="box">
+            <h1>title 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+        <div id="box-3" class="box">
+            <h1>title 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+    </div>
+    <br><br><br><br>
+    <h2>จะเห็นว่า title2 มันลอย ทำให้พื้นที่ด้านขวาว่าง title 3 เลยเข้ามาทับ </h2>
+    <br><br>
+    <hr>
+    <h2>เมื่อให้ title 5,6 ลอย  </h2>
+
+    <div class="container">
+        <div id="box-4" class="box">
+            <h1>title 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+        <div id="box-5" class="box">
+            <h1>title 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+        <div id="box-6" class="box">
+            <h1>title 6</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+        <div id="box-7" class="box">
+            <h1>title 7</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore reprehenderit dignissimos officia vel, nam quia nobis hic voluptatibus et mollitia excepturi maxime debitis exercitationem amet laboriosam quis quidem beatae?</p>
+        </div>
+        <h2>จะเห็นว่า title 7 จะซ้อนกับ title 8</h2>
+        <hr>
+        <br>
+    <div class="container">
+        <div id="box-8" class="box">
+            <h1>title 8</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+        <div id="box-9" class="box">
+            <h1>title 9</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+        <div id="box-10" class="box">
+            <h1>title 10</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure temporibus laborum laboriosam velit delectus quis corporis? Eius labore deserunt, ullam culpa, quas rem consequuntur maxime, veniam exercitationem totam quia quaerat!</p>
+        </div>
+        <div class="clr" ></div>
+        <div id="box-11" class="box">
+            <h1>title 11</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore reprehenderit dignissimos officia vel, nam quia nobis hic voluptatibus et mollitia excepturi maxime debitis exercitationem amet laboriosam quis quidem beatae?</p>
+        </div>
+    </div>
+    <h2>จะเห็นว่า title11 จะไม่ลอยไปบรรทัดเดียวกับ title1- เพราะถูก clear ก่อน</h2>
+ 
+</body>
+</html>

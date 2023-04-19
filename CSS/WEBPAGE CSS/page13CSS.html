@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Page 13 CSS</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            color:brown ;
+        }
+        div
+        {
+            border:1px solid red ;
+            padding-top: 20px;
+        }
+        box-1
+        {
+            background-image:url(../PICCSS/ใบไม้.avif) ;
+            color:chartreuse ;
+        }
+        .box-2
+        {
+            background-image:url(https://cdn.pixabay.com/photo/2023/03/25/19/12/butterfly-7876680__340.jpg) ;
+        }
+        .box-3
+        {
+            background-image:url(https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014__340.jpg);
+            padding: 150px;
+        }
+        .box-4
+        {
+            background-image:url(https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014__340.jpg);
+            background-repeat:repeat-y ;
+            padding-bottom: 700px;
+            border:solid;
+            border-color: black; 
+        }
+        .box-5
+        {
+            background-image:url(https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014__340.jpg);
+            background-repeat:repeat-x;
+            padding-top: 20px;
+            border:solid;
+            border-color: black; 
+        }
+        .box-6
+        {
+            background-image:url(https://cdn.pixabay.com/photo/2023/03/14/19/23/flowers-7853014__340.jpg);
+            background-repeat:no-repeat;
+            padding-top: 20px;
+            padding-bottom: 500px;
+            border:solid;
+            border-color: black; 
+        }
+    </style>
+    <link rel="stylesheet" href="fonth1.css">
 </head>
 <body>
+    <h1>การกำหนดภาพพื้นหลัง</h1>
+    <h2>แบบแรก Internal</h2>
+    <div class="box-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique minima, ad laborum ducimus repudiandae hic ipsum, non facere maxime nemo corrupti est voluptas sunt iure enim quasi dolores tempore.</div>
+    <h2>แบบ external</h2>
+    <div class="box-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis necessitatibus culpa quia aliquid ut, nesciunt aliquam iure perferendis. Id nisi voluptatum, eaque exercitationem dignissimos vel expedita possimus iure ipsa doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint vel labore! Blanditiis minus itaque facere veniam recusandae. Totam natus illo eos reprehenderit exercitationem, possimus vel cum soluta aperiam quis.</div>
+    <div class="box-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nihil iure labore vitae quisquam maiores excepturi, rem illum sed officiis totam est distinctio repellat in qui consequatur placeat animi saepe.</div>
+    <h2>จะเห็นว่า ภาพมันซ้ำหากพื้นที่ไม่พอ</h2>
+    <h1>การใช้ background-repeat </h1>
+    <h2>Repeat y</h2>
+    <div class="box-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio laudantium cumque minima assumenda quam iure? Dolorum commodi, quas inventore illo aliquid accusantium molestiae magni voluptate quam ipsa eum et mollitia!</div>
+    <hr>
+    <h2>Repeat x</h2>
+    <div class="box-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ipsum ratione excepturi saepe eum, labore repellat, hic ad, veniam error quis explicabo. Amet, est? Quisquam tenetur illo ad ipsum tempore?</div>
+    <h2>No Repeat </h2>
+    <div class="box-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, in maiores dolorum adipisci veritatis repudiandae! Perspiciatis provident similique ratione repellat deserunt molestiae alias aperiam, esse quidem exercitationem eos delectus ipsum!</div>
     
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 23 CSS</title>
+    <link rel="stylesheet" href="fonth1.css">
+    <style>
+        div
+        {
+            width: 200px;
+            height: 100px;
+            border:1px double black ;
+            overflow:visible;
+            /*ถ้ามีเนื้อหาล้นออกมาให้แสดงผลอยู่*/
+        }
+        .class1
+        {
+            width: 200px;
+            height: 100px;
+            border:1px double black ;
+            overflow:hidden;
+            /*ถ้ามีเนื้อหาล้นออกมาให้ซ่อน*/
+        }
+        .class2
+        {
+            width: 200px;
+            height: 100px;
+            border:1px double black ;
+            overflow:scroll;
+            /*ถ้ามีเนื้อหาล้นออกมาให้เลื่อนดูได้*/
+        }
+        .class3
+        {
+            width: 200px;
+            height: 100px;
+            border:1px double black ;
+            overflow-x:scroll;
+            /*ถ้ามีเนื้อหาล้นออกมาให้เลื่อนดูได้*/
+        }
+        .class4
+        {
+            width: 200px;
+            height: 100px;
+            border:1px double black ;
+            overflow-y:scroll;
+            /*ถ้ามีเนื้อหาล้นออกมาให้เลื่อนดูได้*/
+        }
+    </style>
+</head>
+<body>
+    <h1>จำกัดการแสดงข้อมูลด้วย overflow</h1>
+    <h2>แบบต่อให้เกินก็แสดงข้แมูล</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minus, quos in earum, porro error, ullam perspiciatis accusantium nemo magni est modi aliquid provident eius explicabo quis! Sunt totam error cum impedit, magni ut esse, autem atque commodi ipsum repellat sint necessitatibus accusantium? Voluptates rerum animi fugiat consequatur architecto facere.
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <h2>แบบถ้าข้อมูลเกินให้ซ่อน</h2>
+    <div class="class1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quis ipsa possimus officiis optio similique laboriosam quos, ut harum ducimus, tempore repellat quod quasi nesciunt facilis cum eaque vero at!</div>
+    <h2>แบบถ้าข้อมูลเกินให้เลื่อน</h2>
+    <div class="class2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus ab, sequi voluptatem beatae quidem quo voluptas aut dicta temporibus! Facere voluptatibus qui vero ipsam. Nostrum impedit eum accusantium aut, tempora non error, commodi fugiat iusto possimus voluptates dicta omnis totam optio. Beatae, aliquid id eum quaerat quia ducimus. Velit explicabo soluta sit eos vel est debitis labore voluptatem unde, atque blanditiis illum minima obcaecati provident quisquam, quas voluptatum dignissimos. Eaque sapiente incidunt, culpa accusantium ducimus quae eos, ipsa quod placeat quo, eligendi adipisci quasi. Illo laborum commodi dolorum debitis eius error minima voluptatibus iusto ratione rem, maxime quibusdam laudantium?</div>
+    <h2>overflow-x</h2>
+    <div class="class3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus ab, sequi voluptatem beatae quidem quo voluptas aut dicta temporibus! Facere voluptatibus qui vero ipsam. Nostrum impedit eum accusantium aut, tempora non error, commodi fugiat iusto possimus voluptates dicta omnis totam optio. Beatae, aliquid id eum quaerat quia ducimus. Velit explicabo soluta sit eos vel est debitis labore voluptatem unde, atque blanditiis illum minima obcaecati provident quisquam, quas voluptatum dignissimos. Eaque sapiente incidunt, culpa accusantium ducimus quae eos, ipsa quod placeat quo, eligendi adipisci quasi. Illo laborum commodi dolorum debitis eius error minima voluptatibus iusto ratione rem, maxime quibusdam laudantium?</div>
+    <h2>overflow-y</h2>
+    <div class="class4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus ab, sequi voluptatem beatae quidem quo voluptas aut dicta temporibus! Facere voluptatibus qui vero ipsam. Nostrum impedit eum accusantium aut, tempora non error, commodi fugiat iusto possimus voluptates dicta omnis totam optio. Beatae, aliquid id eum quaerat quia ducimus. Velit explicabo soluta sit eos vel est debitis labore voluptatem unde, atque blanditiis illum minima obcaecati provident quisquam, quas voluptatum dignissimos. Eaque sapiente incidunt, culpa accusantium ducimus quae eos, ipsa quod placeat quo, eligendi adipisci quasi. Illo laborum commodi dolorum debitis eius error minima voluptatibus iusto ratione rem, maxime quibusdam laudantium?</div>
+</body>
+</html>

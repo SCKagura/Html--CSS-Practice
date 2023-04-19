@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 21 CSS</title>
+    <link rel="stylesheet" href="fonth1.css">
+    <style>
+        html
+        {
+            scroll-behavior: smooth; /*ทำให้เวลากดไปหาหล่องละจะเลื่อน smooth ขึ้น*/
+        }
+        body
+        {
+            height:4000px;
+        }
+        .box
+        {
+            width: 100px;
+            height: 100px;
+        }
+        #box-1
+        {
+            background-color: orange;
+            position:static ; /*คงที่เดิม*/
+        }
+        #box-2
+        {
+            background-color: green;
+            position: relative;
+            left:50px;
+            bottom:20px; /*เยื้องออกจากเดิมจากซ้าย 50px กับบน 20px*/
+        }
+        #box-3
+        {
+            background-color:  purple;
+            position: relative;
+            right:-300px;
+            bottom:-50px ; /*เยื้องออกจากเดิมจากซ้าย -30px กับบน -10px*/
+            z-index:0 ;/*ถ้า =0 จะโดนตารางดำทับ ถ้า=1 จะทับตารางดำ*/
+        }
+        
+        #box-4 /*ถูกกำหนดให้อยู่ในตารางดำ */
+        {
+            background-color: red;
+            position: absolute;
+            top:100px ;
+            left:50px ;
+            
+        }
+        #box-5 /*เมื่อย้าย มันก็จะยังอยู่ในตารางดำ */
+        {
+            background-color:cyan ;
+            position: absolute;
+            top:200px ;
+            left:200px;
+        }
+        #box-6
+        {
+            background-color:coral ;
+            position:fixed ; /*ตัวนี้จะติดอยู่กับหน้าจอตลอดเวลา*/
+        }
+        #box-7
+        {
+            background-color:deeppink ;
+            position: sticky ;
+            top:0 ; /*จะถูกเลื่อนตามเมื่อเลื่อนลูกกลิ้งถึง*/
+        }
+        #box-8
+        {
+            float:right;
+            background-color:khaki ;
+            position: sticky;
+            top:0; /*จะถูกเลื่อนตามเมื่อเลื่อนลูกกลิ้งถึง*/
+        }
+        #box-9
+        {
+            margin-top: 1000px;
+            background-color:yellow ;
+            position: sticky ;
+            top:0 ; /*จะถูกเลื่อนตามเมื่อเลื่อนลูกกลิ้งถึง*/
+        }
+        .container
+        {
+            position: relative /*ต้องกำหนด ไม่งั้นสี red กับ cyan จะไม่อยู่ข้างใน*/;
+            width: 500px;
+            height: 400px;
+            background:#333;
+        }
+    </style>
+</head>
+<body>
+    <h1>การจัดตำแหน่งด้วย Poition</h1>
+    <a href="#box-8">box8</a>
+    <a href="#box-9">box9</a> <!--link ไปที่ กล่องได้-->
+    <div id="box-1" class="box"></div>
+
+    <div id="box-2" class="box"></div>
+    
+    <div id="box-3" class="box"></div>
+
+    <div class="container">
+        <div id="box-4" class="box"></div>
+        <div id="box-5" class="box"></div>
+    </div>
+
+    <div id="box-6" class="box"></div>
+
+    <div id="box-7" class="box"></div>
+
+    <div id="box-8" class="box"></div>
+
+    <div id="box-9" class="box"></div>
+
+</body>
+</html>

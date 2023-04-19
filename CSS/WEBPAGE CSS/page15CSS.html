@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 12 CSS</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            color:brown ;
+        }
+         div
+        {
+            border:2px solid blue;
+        }
+       .box-1
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:left top ; /*กำหนดว่าอยู่ ซ้ายบน */
+        padding-bottom: 300px;
+        margin-bottom: 50px;
+        background-size:auto ; /*เท่าเดิม*/
+       }
+       .box-2
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:left center ;/*กำหนดว่าอยู่ ซ้ายกลาง */
+        padding-bottom: 700px;
+        background-size:300px ; /*กำหนดให้มีขนาด 300 px*/
+       }
+       .box-3
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:left bottom ;/*กำหนดว่าอยู่ ซ้ายล่าง */
+        padding-bottom: 700px;
+        background-size: 60%; /*กำหนดให้มีขนาด 60%*/ 
+       }
+       .box-4
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:center top ;/*กำหนดว่าอยู่ กลางบน */
+        padding-bottom: 700px;
+       }
+       .box-5
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:center center ; /*กำหนดว่าอยู่ กลาง กลาง */
+        padding-bottom: 700px;
+       }
+       .box-6
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:center right ;/*กำหนดว่าอยู่ ซกลาง ขวา*/
+        padding-bottom: 700px;
+       }
+       .box-7
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:right top ; /*กำหนดว่าอยู่ ขวาบน */
+        padding-bottom: 700px;
+       }
+       .box-8
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:right center ; /*กำหนดว่าอยู่ ขวา กลาง */
+        padding-bottom: 700px;
+       }
+       .box-9
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:right bottom ; /*กำหนดว่าอยู่ ขวา ล่าง */
+        padding-bottom: 700px;
+       }
+       .box-10
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:right bottom ; /*กำหนดว่าอยู่ ขวา ล่าง */
+        padding-bottom: 700px;
+        background-size:cover;
+       }
+       .box-11
+       {
+        background-image:url(https://cdn.pixabay.com/photo/2023/01/06/14/34/dog-7701374__340.jpg) ;
+        background-repeat:no-repeat;
+        background-position:right bottom ; /*กำหนดว่าอยู่ ขวา ล่าง */
+        padding-bottom: 700px;
+        background-size:contain;
+       }
+       .box-12
+       {
+        background:url(../PICCSS/S__11788326.jpg) no-repeat fixed center; /*กำหนดหลายคุฯสมบัติในบรรทัดเดียว*/
+        padding-bottom: 700px;
+       }
+       
+    </style>
+    <link rel="stylesheet" href="fonth1.css">
+</head>
+<body>
+    <h1>การกำหนดตำแหน่งพื้นหลังและขนาดของภาพพื้นหลัง</h1>
+    <h1>background-position,background-size</h1>
+    <h2>ซ้ายบน</h2>
+    <div class="box-1"></div>
+    <h2>ซ้ายกลาง</h2>
+    <div class="box-2"></div>
+    <h2>ซ้ายล่าง</h2>
+    <div class="box-3"></div>
+    <h2>กลางบน</h2>
+    <div class="box-4"></div>
+    <h2>กลาง กลาง</h2>
+    <div class="box-5"></div>
+    <h2>กลาง ล่าง</h2>
+    <div class="box-6"></div>
+    <h2>ขวา บน </h2>
+    <div class="box-7"></div>
+    <h2>ขวา กลาง</h2>
+    <div class="box-8"></div>
+    <h2>ขวา ล่าง</h2>
+    <div class="box-9"></div>
+    <h2>background-size:cover</h2>
+    <div class="box-10"></div>
+    <h2>background-size:contain</h2> <!--ขยายภาพแนวกว้างและแนวยาวให้ชนขอบ browser ในอัตราส่วนที่เท่ากัน-->
+    <div class="box-11"></div>
+    <h1>การกำหนดพื้นหลังแบบหลายคุณสมบัติ</h1>
+    <div class="box-12"></div>
+</body>
+</html>

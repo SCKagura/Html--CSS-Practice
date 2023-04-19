@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 19 CSS</title>
+    <style>
+
+        .box
+        {
+            width: 30%;
+            box-sizing: border-box;
+            background-color: grey;
+        }
+        .box1
+        {
+            width: 30%;
+            box-sizing: border-box;
+            display: inline;
+            background-color: grey; /*display:inline ทำให้ผิด สีเลยไม่ถูกเปลี่ยน*/
+        }
+        .box2
+        {
+            width: 30%;
+            box-sizing: border-box;
+            display: block;
+            background-color: grey;
+        }
+        .box3
+        {
+            width: 30%;
+            box-sizing: border-box;
+            display:inline-block;
+            padding: 10px;
+            background-color: grey;
+        }
+        </style>
+</head>
+<link rel="stylesheet" href="fonth1.css">
+<body>
+    <h1>Display inline,block,inline-block</h1>
+        <div class="box">
+            <h2>title1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div>
+       
+        <div class="box">
+            <h2>title2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div>
+     
+        <div class="box">
+            <h2>title3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div> 
+    </ul>
+    <h2>ด้านบน list ถูกกำหนดให้ width = 30%</h2>
+    <hr>
+    <ul>
+        <div class="box1">
+            <h2>title4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div>
+       
+        <div class="box1">
+            <h2>title5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div>
+     
+        <div class="box1">
+            <h2>title6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div> 
+    </ul>
+    <h2>จะเห็นว่า width= 30% ถูก display:inline ทับทำให้ถูกเรียงไปตามแนวนอน</h2>
+    <hr>
+    <ul>
+        <div class="box2">
+            <h2>title7</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div>
+       
+        <div class="box2">
+            <h2>title8</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div>
+     
+        <div class="box2">
+            <h2>title9</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div> 
+    </ul>
+    <h2>จะเห็นว่า ปกติ</h2>
+    <hr>
+    <ul>
+        <div class="box3">
+            <h2>title10</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div>
+       
+        <div class="box3">
+            <h2>title11</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div>
+     
+        <div class="box3">
+            <h2>title12</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab dolor a eius repellendus temporibus, ullam nemo odit excepturi et laboriosam ea delectus voluptatibus debitis sequi quisquam blanditiis fugiat dolorem.</p>
+        </div> 
+    </ul>
+    <h2>จะเห็นได้ว่า title 7,8,9 อยู่บรรทัดเดียวกัน</h2>
+</body>
+</html>

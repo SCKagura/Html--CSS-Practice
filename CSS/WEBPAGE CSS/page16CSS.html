@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 16 CSS</title>
+    <style>
+          h1
+        {
+            text-align: center;
+            color:brown ;
+        }
+        img
+        {
+            width: 150px;
+          
+        }
+        .box-1 img
+        {
+            float:left ; /*เนื้อหาจะถูกเขียนตรงบรรทัดบนสุดของรูปเนื่องจากกำหนดให้รูปลอย*/
+        }
+        .box-2 img
+        {
+            float:right ; /*เนื้อหาจะอยู่บรรทัดบนสุดที่สามารถเขียนได้*/
+        }
+        .box-3 img
+        {
+            float:none ; /*เนื้อหาจะเขียนต่อด้านล่างรูปที่รูปจบ เนื่องจากไม่กำหนดให้รูปลอย*/
+        }
+        .box-4 img
+        {
+            float:left ;
+        }
+    </style>
+    <link rel="stylesheet" href="fonth1.css">
+</head>
+<body>
+    <h1>การใช้ float</h1>
+    <div class="box-1">
+        <p>
+            <img src="https://cdn.pixabay.com/photo/2023/04/07/07/14/cat-7905702__340.jpg" alt="">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis et labore eos perferendis beatae unde veritatis, esse magnam quis itaque animi qui nemo velit cumque nisi reprehenderit a rem officiis.
+        </p>
+    </div>
+    <div class="box-2">
+        <p>
+            <img src="../PICCSS/S__11788326.jpg" alt="">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis et labore eos perferendis beatae unde veritatis, esse magnam quis itaque animi qui nemo velit cumque nisi reprehenderit a rem officiis.
+        </p>
+    </div>
+    <div class="box-3">
+        <p>
+            <img src="https://cdn.pixabay.com/photo/2023/04/07/07/14/cat-7905702__340.jpg" alt="">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis et labore eos perferendis beatae unde veritatis, esse magnam quis itaque animi qui nemo velit cumque nisi reprehenderit a rem officiis.
+        </p>
+    </div>
+    <h2>มองออกยังว่าแตกต่างกันยังไง?</h2>
+    <h3>กำหนดให้ float</h3>
+    <div>
+        <p>
+            <img src="../PICCSS/S__11788326.jpg" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ab assumenda eligendi earum, mollitia nisi laboriosam officiis totam distinctio reiciendis deserunt, dicta repellat aliquid autem iure explicabo cumque vero illo?
+        </p>
+    </div>
+    <h3>ไม่กำหนดให้ float</h3>
+    <div class="box-4">
+        <p>
+            <img src="../PICCSS/S__11788326.jpg" alt="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ab assumenda eligendi earum, mollitia nisi laboriosam officiis totam distinctio reiciendis deserunt, dicta repellat aliquid autem iure explicabo cumque vero illo?
+        </p>
+    </div>
+</body>
+</html>
