@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 6 CSS</title>
+    <style>
+        .fonts
+        {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .fonts1
+        {
+            font-family:Arial;
+            font-size:20px;
+        }
+        #itim
+        {
+            font-family: 'Itim', cursive; /*เมื่อ link แล้วก็สามารถใช้ได้เลย*/
+        }
+
+   </style>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> /*ลิ้งที่คัดลอกมาจาก font ใน google*/
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 align="center">การกำหนด fonts</h1>
+    <h2 align="center">แบบ internal </h2>
+
+    <h2 class="fonts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dicta quas exercitationem a iste quam corporis alias ad tempora eos, quasi, quisquam nemo reprehenderit? Delectus assumenda vero saepe ea odit!</h2>
+    <h3 class="fonts1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquid ut laborum unde sed ad esse mollitia iure dicta nisi nulla amet quae illum vero suscipit odio, ducimus fugiat maiores!</h3>
+   
+   <h2>จะถูกควบคุมภายใต้ style</h2>
+   <h1 align=center>แบบ external</h1>
+   <h3>แบบแรก นำมาจากเว็ปใน google</h3>
+    <h3 id="itim"> 
+        รักฝังตรึงใจในหัวใจยังห่วงหา คิดถึงเธอในทุกวันที่อ่อนล้า
+        แม้ไกลจนสุดฟ้ายังคงรอพบเธอ ฉันยังจดจำวันที่ได้เจอเธอ
+        กลิ่นจากกายพาให้ใจพร่ำเพ้อ พาให้ใจยังละเมอถึงเธอในความฝัน
+    </h3>
+    <h2 align="center">แบบ ใช้ไฟล์ .CSS แยก</h2>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit placeat tempora ab ea assumenda exercitationem officia nobis libero pariatur fugit excepturi, quis aliquid, numquam iste dolorum? Totam iste sequi voluptatem.</h4>
+    <h5>ฉันชอบตัวเองตอนอยู่กับเธอ
+        ชอบที่ฉันเป็นตอนอยู่กับเธอ
+        เหมือนฉันได้กลายมาเป็นอีกคนที่ดีกว่าเดิม</h5> <!--ถกกำหนดฟอนต์โดยไฟล์ style.css-->
+    <h1 align="center">การกำหนดขนาด fonts</h1>
+    <h2 align="center">แบบค่าคงที่</h2>
+    <h4 style="font-size: xx-small;">xx-small</h4>
+    <h4 style="font-size: x-small;">x-small</h4>
+    <h4 style="font-size:small;">small</h4>
+    <h4 style="font-size:medium;">medium</h4>
+    <h4 style="font-size:large;">large</h4>
+    <h4 style="font-size:larger;">larger</h4>
+    <h4 style="font-size:x-large;">x-large</h4>
+    <h4 style="font-size:x-large;">x-large</h4>
+    <h4 style="font-size:xx-large;">xx-large</h4>
+    <!--เรียงตามขนาด-->
+    <h1 align="center">แบบเลข</h1>
+    <h4 style="font-size:10px;">10px</h4>
+    <h4 style="font-size:30px;">30px</h4>
+    <h4 style="font-size:0.5in;">0.5 in</h4>
+    <h1 align="center">การกำหนดความหนาข้อความ</h1>
+    <h4 style="font-weight:bold;">bold</h4>
+    <h4 style="font-weight:bolder;">bolder</h4>
+    <h4 style="font-weight:lighter;">lighter</h4>
+    <h4 style="font-weight:500;">500</h4>
+    <h4 style="font-weight:700;">700</h4>
+    <h1 align="center">รูปแบบตัวอักษร</h1>
+    <h4 style="font-style:oblique">Oblique</h4>
+    <h4 style="font-style:italic">Italic</h4>
+
+
+
+</body>
+</html>

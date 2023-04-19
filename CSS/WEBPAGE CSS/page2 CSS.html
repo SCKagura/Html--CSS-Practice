@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <title>Page 2 CSS</title>
     <style>
+        h1
+        {
+            color:navy ;
+        }
+        h2
+        {
+            color:tomato ;
+        }
         h3
         {
             color:crimson ; /*การกำหนดภายใต้ tag <style> คือการกำหนดแบบ internal/embedded */
+        }
+        p
+        {
+            font-size: 30px ; /*กำหนดให้ tag p มีขนาดฟอนต์ = 30px 1px=0.75pt*/
+        }
+        h4
+        {
+            font-size:30pt ; /*กำหนดให้ tag h4 มีขนาดฟอนต์ = 30pt  1pt = 1/72 inches*/
+        }
+        h5
+        {
+            font-size:1cm; /*กำหนดให้ tag h5 มีขนาดฟอนต์ = 1 cm */
+        }
+        h6
+        {
+            font-size:9mm;/*กำหนดให้ tag h6 มีขนาดฟอนต์ = 9mm */
+        }
+        div
+        {
+            font-size:0.5in; /*กำหนดให้ tag div มีขนาดฟอนต์ = 0.3inch  1inch=2.54cm*/
+        }
+        span
+        {
+            font-size: 2pc; /*กำหนดให้ tag span มีขนาด 2 picas 1picas=12pt*/
         }
     </style>
     <link rel="stylesheet" href="../test.css">
@@ -30,7 +62,19 @@
 
     <h1 align="center">หน่วยใน CSS</h1>
     <h2 align="center">แบบ Absolute(ตายตัว)</h2>
+    <p>tag p กำหนดให้มีขนาด 30px</p> 
+    <h4 style="color:black">tag h4 กำหนดให้มีขนาด 30 pt</h4>
+    <h5>tag h5 กำหนดให้มีขนาด 1 cm</h5>  
+    <h6>tag h6 กำหนดให้มีขนาด 9 mm</h6>
+    <div>tag div กำหนดให้มีขนาด 0.5 in</div>
+    <span>tag span กำหนดให้มีขนาด 2 pc</span>
+    <h3>ข้อดี = นำไปใช้กับสื่งใดก็ตามให้มีค่าที่เฉพาะตัวคงที่ </h3>
+    <h3>ข้อเสีย = เมื่อนำไปใช้กับอุปกรณ์เครื่องอื่น ขนาดจะไม่เปลี่ยนแปลงตามจอ จะถูกกำหนดไว้ให้เท่ากันทุกที่</h3>
+    <h3>เช่น ถ้าเปิดในมือถือเครื่องเล็ฏๆด้วยการกำหนดขนาดที่ใหญ่ตัวอักษรจะข้ามบรรทัด อ่านได้ยาก</h3>
+  
+    <br><hr><br>
     
+   
 
 </body>
 </html>
