@@ -1,0 +1,127 @@
+*
+{
+    box-sizing: border-box;
+}
+.item
+{
+    background-color:orange;
+    border:1px solid black ;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 10px;
+}
+/*ขนาดจริง ไม่ใช่ 200 ต้องคำควณรวม border กับ padding ด้วย การจะทำให้เป็นค่าจริงต้องใช้     box-sizing: border-box; */
+
+.flex-container
+{
+    display: flex;
+    background-color: aqua; /**สีแสดงถึงพื้นที่ของ flex container*/
+}
+/*ค่าเริ่มต้นของ flexbox จะเริ่มเรียงจากแนวนอน(อัตโนมัต,ค่าเริ่มต้น) หากไม่กำหนดทิศทาง เริ่มต้นจะกำหนดให้เรียงซ้ายไปขวา*/
+
+.flex-container1
+{
+    display: flex;
+    background-color: red; /*สีแสดงถึงพื้นที่ของ flex container*/
+    flex-direction:row; /*จะถูกเรียงแนวนอนจากด้านซ้ายก่อน*/
+}
+.flex-container2
+{
+    display: flex;
+    background-color:darkorchid; /**สีแสดงถึงพื้นที่ของ flex container*/
+    flex-direction:row-reverse; /*จะถูกเรียงแนวนอนจากด้านขวาก่อน*/
+}
+.flex-container3
+{
+    display: flex;
+    background-color:rgb(0, 149, 242); /**สีแสดงถึงพื้นที่ของ flex container*/
+    flex-direction:column; /*จะถูกเรียงแนวตั้งจากด้านซ้ายก่อน*/
+}
+.flex-container4
+{
+    display: flex;
+    background-color:rgb(192, 235, 20); /**สีแสดงถึงพื้นที่ของ flex container*/
+    flex-direction:column-reverse; /*จะถูกเรียงแนวตั้งจากด้านขวาก่อน*/
+}
+.flex-container5
+{
+    display: flex;
+    background-color:rgb(64, 60, 148); /**สีแสดงถึงพื้นที่ของ flex container*/
+   flex-wrap: nowrap;
+}
+
+.flex-container6
+{
+    display: flex;
+    background-color:rgb(145, 149, 129); /**สีแสดงถึงพื้นที่ของ flex container*/
+   flex-wrap: wrap;
+}
+/*กล่องที่เกินพื้นที่ flexbox จะถูกตบลงด้านล่าง*/
+
+.flex-container7
+{
+    display: flex;
+    background-color:rgb(147, 57, 147); /**สีแสดงถึงพื้นที่ของ flex container*/
+   flex-wrap: wrap-reverse;
+}
+/*เลขที่เรียงจะแตกต่างจาก wrap โดยจะให้เลขที่จำนวนพอถึงกับกล่องท้ายขึ้นก่อน*/
+
+.flex-container8
+{
+    display: flex;
+    background-color: rgb(9, 8, 10); /**สีแสดงถึงพื้นที่ของ flex container*/
+}
+.item-11
+{
+    flex-basis: 500px;
+}
+/*ให้ค่ายืดหยุ่นเริ่มต้น = 500px แต่ตัวอื่นยังปกติ*/
+
+.flex-container9
+{
+    display: flex;
+    background-color: rgb(62, 215, 24); /**สีแสดงถึงพื้นที่ของ flex container*/
+}
+.item-14
+{
+    flex-shrink: 2;
+}
+/*เวลาหดจะหดลงเยอะกว่าปกติ 2 เท่า*/
+
+.flex-container10
+{
+    display: flex;
+    background-color: rgb(202, 29, 29); /**สีแสดงถึงพื้นที่ของ flex container*/
+}
+.item-17
+{
+    flex-grow:2 ;
+}
+/* item-17 จะขยายตัวเป็นสองเท่า */
+.item-18
+{
+    flex-grow:0;
+}
+.item1
+{
+    background-color:orange;
+    border:1px solid black ;
+    width: 200px;
+    /* padding: 10px; */
+    /* margin: 10px; */
+    text-align:center;
+    border-radius: 10px;
+    flex:1 ;
+}
+.flex-container11
+{
+    display: flex;
+    background-color: rgb(200, 205, 40); /**สีแสดงถึงพื้นที่ของ flex container*/
+}
+.item-20
+{
+    flex:2 ;
+}
+/*จะเห็นว่า item 19,20,21 จะถูกกำหนดให้เท่ากันและปิดตัว container แต่ มากำหนดให้ 20 เป็นสองเท่าของตัวอื่น*/

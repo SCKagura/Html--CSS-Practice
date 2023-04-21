@@ -1,0 +1,85 @@
+body
+{
+    background: grey;
+    color: white;
+    text-align: center;
+     padding: 100px; 
+}
+h1
+{
+    display:none;
+}
+/*smartphone*//*การใส่ only screen ให้มันแสดงเฉพสะหน้าจอ เพราะมันมีส่วนของ printer อยู่*/
+@media only screen and (max-width:480px) 
+{
+    body
+    {
+        background-color: red;
+    }
+    #smartphone h1
+    {
+        display: block;
+    }
+}
+/*พวกมือถือทั่วไป จะมีพื้นหลังสีแดง และแสดงข้อความ SmartPhone*/
+
+/* tablet */
+@media (min-width:481px) and (max-width:768px)
+{
+    body
+    {
+        background-color: blue;
+    }
+    #tablet h1
+    {
+        display: block;
+    }
+}
+/* laptop */
+@media (min-width:769px) and (max-width:1024px)
+{
+    body
+    {
+        background-color: chartreuse;
+    }
+    #laptop h1 
+    {
+        display: block;
+    }
+}
+/* desktop */
+@media (min-width:1025px) and (max-width:1200px)
+{
+    body
+    {
+        background-color: deeppink;
+    }
+    #desktop h1
+    {
+        display: block;
+    }
+}
+/* tv */
+@media (min-width:1200px) 
+{
+    body
+    {
+        background-color: chocolate;
+    }
+    #tv h1
+    {
+        display: block;
+    }
+}
+/* landscape */
+@media (max-height:500px)
+{
+    body
+    {
+        background-color: orange;
+    }
+    #landscape h1
+    {
+        display: block;
+    }
+}
