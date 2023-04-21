@@ -1,0 +1,85 @@
+.item
+{
+    background-color:orange;
+    border:1px solid black ;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 10px;
+}
+.flex-container1
+{
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.flex-container2
+{
+    display: flex;
+    background-color: rgba(110, 24, 209, 0.335);
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-container3
+{
+    display: flex;
+    background-color: rgba(86, 148, 148, 0.053);
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.flex-container4
+{
+    display: flex;
+    background-color: rgb(21, 211, 211);
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-container5
+{
+    display: flex;
+    background-color: rgb(197, 39, 195);
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-container6
+{
+    display: flex;
+    background-color: rgb(204, 164, 203);
+    flex-direction:column;
+    justify-content: flex-start;
+    height: 70vh;
+}
+.flex-container7
+{
+    display: flex;
+    background-color: rgb(22, 33, 33);
+    flex-direction:column;
+    justify-content: center;
+    height: 70vh;
+}
+.flex-container8
+{
+    display: flex;
+    background-color: rgb(102, 143, 72);
+    flex-direction:column;
+    justify-content: flex-end;
+    height: 70vh;
+}
+.flex-container9
+{
+    display: flex;
+    background-color: rgb(88, 48, 54);
+    flex-direction:column;
+    justify-content:  space-around;
+    height: 70vh;
+}
+.flex-container10
+{
+    display: flex;
+    background-color: rgb(106, 143, 38);
+    flex-direction:column;
+    justify-content: space-between;
+    height: 70vh;
+}
