@@ -62,3 +62,19 @@
     align-items: flex-end;
     height: 70vh;
 }
+.flex-container8
+{
+    display: flex;
+    background-color: rgb(103, 123, 174);
+    flex-direction:row;
+    height: 50vh;
+    align-items: flex-start;
+}
+.item-01
+{
+    align-self: flex-end;
+}
+.item-02
+{
+    align-self: center;
+}
