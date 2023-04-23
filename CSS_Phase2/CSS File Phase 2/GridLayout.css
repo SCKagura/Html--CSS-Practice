@@ -1,0 +1,42 @@
+.item
+{
+    padding: 3rem;
+    border: 1px solid salmon;
+    background: aqua;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.grid-container
+{
+    display: grid;
+    grid-template-rows:100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+/*ทำ 3 แถว แถวละ 3 item*/
+
+
+.grid-container1
+{
+    /* padding-top: 100px; */
+    display: grid;
+    grid-template-rows:100px 200px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+/*ทำให้แค่แถว 2 สูง 200px*/
+.grid-container2
+{
+    display: grid;
+    grid-template-rows:100px 200px 300px 200px;
+    grid-template-columns: 100px 100px;
+}
+/*4 แถว 2 คอลัมน์*/
+.grid-container3
+{
+    display: grid;
+    grid-template-rows:100px 200px 300px ;
+    grid-template-columns: 200px 500px 200px;
+}
+/* ให้คอลลัมน์กลางยืด */

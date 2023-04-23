@@ -1,0 +1,128 @@
+.item
+{
+    padding: 3rem;
+    border: 1px solid salmon;
+    background: aqua;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.grid-container1
+{
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item1:first-child
+{
+    background-color: green ;
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+/* อยากให้ item 1 ไปรวมกับพื้นที่ column 2 แล้วตบ item 2 ออกไป */
+
+.grid-container2
+{
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item2:first-child
+{
+    background-color: green ;
+   grid-column-start: 1;
+   grid-column-end: 4;
+}
+/*อยากให้ item 1 ไปรวมกับพื้นที่ column 2 และ 3 แล้วตบ item 2 ออกไป*/
+.grid-container3
+{
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item3:first-child
+{
+    background-color: green ;
+   grid-column:1/3;
+}
+.grid-container4
+{
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item4:first-child
+{
+    background-color: green ;
+   grid-column:1/4;
+}
+/* จะเลือกตัวสุดท้าย ให้ใช้ .item:last-child ; */
+.grid-container5
+{
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item5:last-child
+{
+    background-color: green ;
+   grid-column-start: 1;
+   grid-column-end: 4;
+}
+.grid-container6
+{
+    padding-top: 30px;
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item6:first-child
+{
+    background-color: green ;
+   grid-column-start: 1;
+   grid-column-end: 4;
+}
+.item6:last-child
+{
+    background-color: green ;
+   grid-column-start: 2;
+   grid-column-end: 4;
+}
+.grid-container7
+{
+    padding-top: 30px;
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item7:first-child
+{
+    background-color: green ;
+    grid-row-start:1 ;
+    grid-row-end :3 ;
+}
+.grid-container8
+{
+    padding-top: 30px;
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item8:first-child
+{
+    background-color: green ;
+    grid-row-start:1 ;
+    grid-row-end :4 ;
+}
+.grid-container9
+{
+    padding-top: 30px;
+    display: grid;
+    grid-template-rows:repeat(3,100px) ;
+    grid-template-columns:repeat(3,auto);
+}
+.item9:first-child
+{
+    background-color: green ;
+    grid-row:1/5 ;
+}
