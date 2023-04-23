@@ -1,0 +1,83 @@
+.box-1
+{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+/*พอมาแท็ป รอ 5 วิ กล่องจะเปลี่ยนเป็นสีส้ม */
+.box-1:hover
+{
+    background-color: blue;
+}
+/*เมื่อเอาเมาส์ไปวาง กล่องจะกลายเป็นวีน้ำเงิน*/
+.box-2
+{
+    background-color:black;
+    width: 100px;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 5s;
+    transition-timing-function:ease;
+}
+.box-2:hover
+{
+    background-color: red; 
+}
+.box-3
+{
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 5s;
+    transition-timing-function:ease;
+    transition-delay: 5s; /*รอ 5 วิถึงจะออก*/
+}
+.box-4
+{
+    background-color:rgb(31, 240, 8);
+    width: 100px;
+    height: 100px;
+    transition: background-color 2s ease-in 3s ;
+}
+.box-5
+{
+    background-color:rgb(193, 231, 7);
+    width: 100px;
+    height: 100px;
+    transition: background-color 2s ,width 3s ease-in 3s ;
+}
+.box-5:hover
+{
+    background-color:hotpink ;
+    width: 300px;
+}
+/*จะเปลี่ยนสีละยืดออก */
+.box-6
+{
+    background-color:rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    transition: background-color 2s ,width 3s,border-radius 3s ease-in 3s ;
+}
+.box-6:hover
+{
+    background-color:rgb(105, 38, 72) ;
+    width: 300px;
+    border-radius: 100px;
+}
+.box-7
+{
+    background-color:rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    transition: all 3s ease-in 0.5s ;
+}
+.box-7:hover
+{
+    background-color:rgb(168, 118, 143) ;
+    width: 300px;
+    border-radius: 100px;
+}
