@@ -1,0 +1,47 @@
+body
+{
+    background-color: #000000;
+}
+.box-1
+{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: animate1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate1
+{
+    0%
+    {
+        top:0 ;
+        left:0 ;
+
+    }
+    25%
+    {
+        top:0 ;
+        left:800px ;
+        transform: rotate(45deg);
+    }
+    50%
+    {
+        top:280px ;
+        left:800px ;
+        transform: rotate(90deg);
+    }
+    75%
+    {
+        top:280px ;
+        left:0 ;
+        transform: rotate(135deg);
+    }
+    100%
+    {
+        top:0 ;
+        left:0 ;
+        transform: rotate(180deg);
+    }
+}
