@@ -1,0 +1,45 @@
+.box-1
+{
+    border:1px solid black ;
+}
+.box-2
+{
+    border:1px solid black ;
+}
+.box-3
+{
+    border:1px solid black ;
+}
+/*มันใช้ซ้ำ พอมาแก้ให้เหมือนกัน  จะต้องแก้ทีละตัว */
+/* ตัวแปรมี 2 รูปแบบ 1.local variable 2.global variable */
+:root
+{
+    --box:10px solid red;
+    --theme-color:pink ;
+    --shadow:10px 70px var(--theme-color) ;
+    --spacing:50px ;
+    --font:40px ;
+}
+.box-4
+{
+    border:var(--box) ;
+    background-color:var(--theme-color);
+    margin:var(--spacing) ;
+    font-size: var(--font);
+}
+.box-5
+{
+    border:var(--box) ;
+    margin:var(--spacing) ;
+    font-size: var(--font);
+
+}
+.box-6
+{
+    border:var(--box) ;
+    background-color:var(--theme-color);
+    margin:var(--spacing) ;
+    box-shadow: var(--shadow);
+    font-size:var(--spacing) ;
+}
+/*สร้างตัวแปรเพื่อให้ใช้ร่วม เมื่อแก้ไขจะแก้แค่ทีเดียว */

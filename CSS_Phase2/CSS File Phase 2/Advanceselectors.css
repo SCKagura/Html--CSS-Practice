@@ -1,0 +1,124 @@
+p
+{
+    background-color: orange;
+}
+/* 1.targetted attribute */
+/* 1.1 Descendant selector */
+div.div1 p
+{
+    background-color: greenyellow;
+}
+/*เข้าไปที่ div เจอ tag p  ที่ไหน ย้อมสี greenyellow หมด */
+
+/* 1.2 child selector*/
+div.div2>p
+{
+    background-color: aqua;
+}
+/*tag p เฉพาะที่เป็นลูกของ div จะถูกย้อมสี */
+/* 2.style by attribute*/
+a
+{
+    background-color:plum;
+}
+a[target]
+{
+    background-color: red;
+    color:white ;
+}
+/*tag a ที่มี attribute target จะมีลักษณะตามนี้*/
+a[target='_blank']
+{
+    background-color: rgb(62, 99, 163);
+    color:rgb(6, 6, 6) ;
+}
+/*tag a ที่มี attribute target='_blank' จะมีลักษณะตามนี้*/
+a[target='_self']
+{
+    color:brown ;
+    background-color: aquamarine;
+}
+/* 3. special attribute*/
+/*การเขียน style ให้กับตัว attribute พร้อมๆกัน*/
+input[type="email"],input[type="text"]
+{
+    width: 50%;
+    margin-bottom: 5px;
+}
+input[type="submit"]
+{
+    color:white ;
+    background-color: red;
+    border-radius: 10px;
+}
+/* 4. pseudo selectors */
+li
+{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    list-style: none; /**ทำให้จุด หายไป*/
+}
+
+li.pseudo1:first-child /*จะเอา li ตัวแรกเท่านั้น*/
+{
+    background-color:chartreuse;
+}
+li.pseudo1:last-child /*จะเอา li ตัวสุดท้ายเท่านั้น*/
+{
+    background-color: orange;
+}
+/*แบบ nth-child() จะนับจาก บน ลง ล่าง */
+li.pseudo1:nth-child(3)  /*จะเอา li ตัวที่ 3 เท่านั้น*/
+{
+    background-color: turquoise;
+}
+li.pseudo1:nth-child(6)  /*จะเอา li ตัวที่ 6 เท่านั้น*/
+{
+    background-color:blue ;
+}
+
+/*แบบ nth-lastchild() จะนับจาก ล่าง ขึ้น บน */
+li.pseudo1:nth-last-child(3) /*หมายถึงนับจากจัวล่างสุดขึ้นมา 3 ลำดับ ที่นี้หมายถึง 19 */
+{
+    background-color: tomato;
+}
+
+
+li.pseudo2:nth-child(5n)
+{
+    background-color:aqua ;
+}
+/*ทุกๆ 5 ตัว จะย้อมสี aqua*/
+li.pseudo2:nth-child(6n+1)
+{
+    background-color:yellowgreen ;
+}
+/*ทุกๆ 6 ตัวจะย้อมสี yellowgreen เริ่มต้นที่ตัวที่ 1 */
+li.pseudo2:nth-child(6n+8)
+{
+    background-color:rgb(126, 135, 108) ;
+}
+/*ทุกๆ 6 ตัวจะย้อมสี rgb(126, 135, 108) เริ่มต้นที่ตัวที่ 8 */
+
+li.pseudo3:nth-child(even)
+{
+    background-color: blueviolet;
+}
+/*ทุกๆเลขคู่ จะย้อมสี blueviolet */
+li.pseudo3:nth-child(odd)
+{
+    background-color: rgb(196, 157, 49);
+}
+/*ทุกๆเลขคี่จะย้อมสี rgb(196, 157, 49) */
+.is-requried::before
+{
+    content:"*" ;
+    color:red;
+    padding-left: 2px;
+}
+.is-requried::after
+{
+    content:"*" ;
+    color:blue;
+    padding-left: 2px;
+}

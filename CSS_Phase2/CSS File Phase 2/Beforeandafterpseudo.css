@@ -1,0 +1,33 @@
+body
+{
+    background-color: #333;
+    color:white;
+    text-shadow: black;
+    
+}
+header>h1
+{
+    font-size: 4rem;
+    margin: 1rem;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+header::before
+{
+    content: "";
+    background: url(../CSS_Photo_Phase_2/S__11788326.jpg) no-repeat center center/cover ;
+    position: absolute;
+    top:0 ;
+    left:0 ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}

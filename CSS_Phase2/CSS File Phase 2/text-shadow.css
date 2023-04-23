@@ -1,0 +1,9 @@
+h1
+{
+    text-shadow: 2px 2px 7px red;
+}
+h2
+{
+    text-shadow: 2px 1px 20px blue;
+}
+/*text-shadow:เงาแกนx เงาแกนy ความเบลอ สี */
