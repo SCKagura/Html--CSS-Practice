@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript |Page12</title>
+    <link rel="stylesheet" href="../CSS ON JavaScript/fonts.css">
+  
+</head>
+<body onload="welcome()">
+    <h1 class="head">DOM EVENT</h1>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum amet fugiat tempora illum. Vero, est! Debitis, laudantium, quasi quibusdam tempora perspiciatis cum sed earum molestias facilis suscipit rerum corporis repellendus.</div>
+    <label for="">ชื่อ</label>
+    <input type="text" placeholder="ป้อนชื่อ" onfocus="highlight(this)" onblur="unhighlight(this)"> <!--เมื่อเอาเมาส์วาง ช่องจะเป็นสีเหลือง หากออกจะเป็นสีดำ-->
+    <textarea name="" id="" cols="30" rows="10"onfocus="highlight(this)" onblur="unhighlight(this)""></textarea>
+    <br>
+    <label for="">เลือกเครื่องมือของคุณ</label>
+    <select name="" id="menu" onchange="getmenu()">
+        <option value="JavaScript">JavaScript</option>
+        <option value="CSS">CSS</option>
+        <option value="HTML">HTML</option>
+        <option value="Python">Python</option>
+    </select>
+    <p id="display"></p>
+    <a href="" onmouseover="highlight(this)" onmouseout="unhighlight(this)">Menu 1</a>
+    <a href="" onmouseover="highlight(this)" onmouseout="unhighlight(this)">Menu 2</a>
+<hr>
+    <h1 class="head">Event Listener</h1>
+    <select name="" id="menu1" >
+        <option value="JavaScript">JavaScript</option>
+        <option value="CSS">CSS</option>
+        <option value="HTML">HTML</option>
+        <option value="Python">Python</option>
+    </select>
+    
+    <select name="" id="menu2">
+        <option value="JavaScript">JavaScript</option>
+        <option value="CSS">CSS</option>
+        <option value="HTML">HTML</option>
+        <option value="Python">Python</option>   
+    </select>
+    <p id="display1"></p>
+    <button id="btn">Click me</button>
+
+<hr>
+
+<h1 class="head">ยินดีด้วย คุณจบ JavaScript เบื้องต้นแล้ว</h1>
+
+
+
+
+
+
+
+
+  <script src="../javascriptfile/17DOMEvent.js"></script>
+</body> 
+</html>
